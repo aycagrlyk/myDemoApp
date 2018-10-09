@@ -36,10 +36,10 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-   /* public void testApp()
+    public void testApp()
     {
         assertTrue( true );
-    }*/
+    }
       public void testFound() {
      // ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
       ArrayList<Integer> a =new ArrayList<>();
