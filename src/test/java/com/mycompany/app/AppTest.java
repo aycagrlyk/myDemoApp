@@ -41,22 +41,43 @@ public class AppTest
         assertTrue( true );
     }*/
       public void testFound() {
-      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-      assertTrue(new App().search(array, 4));
+     // ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+      Integer [] a ={1,2,3,4}; 
+      Integer [] b={4,3,2,1};
+      int sizeA=4;
+      int sizeB=4;
+      assertTrue(new App().search(a,sizeA,b,sizeB));
+      //assertTrue(new App().search(array, 4));
     }
 
     public void testNotFound() {
-      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-      assertFalse(new App().search(array, 5));
+     // ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+     // assertFalse(new App().search(array, 5));
+      Integer [] a ={1,2,3,4}; 
+      Integer [] b={4,3,2,1};
+      int sizeA=5;
+      int sizeB=4;
+      assertFalse(new App().search(a,sizeA,b,sizeB));
     }
 
     public void testEmptyArray() {
-      ArrayList<Integer> array = new ArrayList<>();
-      assertFalse(new App().search(array, 1));
+      Integer [] a ={}; 
+      Integer [] b={};
+      int sizeA=0;
+      int sizeB=0;
+      assertFalse(new App().search(a,sizeA,b,sizeB));
+     // ArrayList<Integer> array = new ArrayList<>();
+      //assertFalse(new App().search(array, 1));
     }
 
     public void testNull() {
       assertFalse(new App().search(null, 1));
     }
-
+    public void myTest(){
+        Integer [] a ={1,2,3,4}; 
+        Integer [] b={4,3,2,1};
+        int sizeA=4;
+        int sizeB=4;
+        assertTrue(new App().search(a,sizeA,b,sizeB));
+    }
 }
