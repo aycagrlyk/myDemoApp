@@ -84,13 +84,13 @@ public class AppTest
       int sizeA=0;
       int sizeB=0;
 
-      assertFalse(new App().search(a,sizeA,b,sizeB));
+      assertTrue(new App().search(a,sizeA,b,sizeB));
      // ArrayList<Integer> array = new ArrayList<>();
       //assertFalse(new App().search(array, 1));
     }
 
     public void testNull() {
-      assertFalse(new App().search(null, 0,null,0));
+      assertTrue(new App().search(null, 0,null,0));
     }
     public void myTest(){
         ArrayList<Integer> a =new ArrayList<>(); 
