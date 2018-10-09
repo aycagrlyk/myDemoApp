@@ -42,8 +42,8 @@ public class AppTest
     }*/
       public void testFound() {
      // ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-      Integer [] a ={1,2,3,4}; 
-      Integer [] b={4,3,2,1};
+      ArrayList<Integer> a ={1,2,3,4}; 
+      ArrayList<Integer> b={4,3,2,1};
       int sizeA=4;
       int sizeB=4;
       assertTrue(new App().search(a,sizeA,b,sizeB));
@@ -53,16 +53,16 @@ public class AppTest
     public void testNotFound() {
      // ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
      // assertFalse(new App().search(array, 5));
-      Integer [] a ={1,2,3,4}; 
-      Integer [] b={4,3,2,1};
+     ArrayList<Integer> a ={1,2,3,4}; 
+     ArrayList<Integer> b={4,3,2,1};
       int sizeA=5;
       int sizeB=4;
       assertFalse(new App().search(a,sizeA,b,sizeB));
     }
 
     public void testEmptyArray() {
-      Integer [] a ={}; 
-      Integer [] b={};
+    ArrayList<Integer> a ={}; 
+    ArrayList<Integer> b={};
       int sizeA=0;
       int sizeB=0;
       assertFalse(new App().search(a,sizeA,b,sizeB));
@@ -71,11 +71,11 @@ public class AppTest
     }
 
     public void testNull() {
-      assertFalse(new App().search(null, 1));
+      assertFalse(new App().search(null, 0,null,0));
     }
     public void myTest(){
-        Integer [] a ={1,2,3,4}; 
-        Integer [] b={4,3,2,1};
+        ArrayList<Integer> a ={1,2,3,4}; 
+        ArrayList<Integer> b={4,3,2,1};
         int sizeA=4;
         int sizeB=4;
         assertTrue(new App().search(a,sizeA,b,sizeB));

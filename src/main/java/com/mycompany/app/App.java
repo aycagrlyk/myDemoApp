@@ -15,18 +15,18 @@ public class App
 {
 
     
-    public static boolean search(Integer [] a,int sizeA,Integer [] b,int sizeB){
+    public static boolean search(ArrayList <Integer> a,int sizeA,ArrayList <Integer> b,int sizeB){
         if(sizeA!=sizeB){
             return false;
         }else{
-            Integer [] temp = new Integer [sizeA];
-            int index=0;
+            ArrayList <Integer> temp =new ArrayList<Integer>();
+            
             for(int i=sizeA-1;i>=0;i--){
-                temp[index]=a[i];
-                index++;
+                temp.add(a.get(i));
+                
             }
             for(int j=0;j<sizeB;j++){
-                if(temp[j]==b[j]){
+                if(temp.get(j)==b.get(j)){
                     
                 }else{
                     return false;
