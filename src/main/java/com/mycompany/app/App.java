@@ -31,9 +31,12 @@ public class App
                 }else{
                     return false;
             }
-            return true;
             
+        
         }
+        return true;
+    }
+}
     public static void main(String[] args) {
         port(getHerokuAssignedPort());
 
@@ -65,7 +68,7 @@ public class App
           while (sc3.hasNext())
           {
             int value = Integer.parseInt(sc3.next().replaceAll("\\s",""));
-            inputList.add(value);
+            inputList2.add(value);
           }
           System.out.println(inputList2);
 
